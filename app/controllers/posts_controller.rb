@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   def update
     @post = Post.new(post_params)
     
-    if @author.valid?
+    if @post.valid?
       @author.save
       redirect_to author_path(@author)
     else
