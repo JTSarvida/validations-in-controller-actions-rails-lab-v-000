@@ -13,6 +13,7 @@ class AuthorsController < ApplicationController
       @author.save
     else
       render :new
+    end
     
     redirect_to author_path(@author)
   end
