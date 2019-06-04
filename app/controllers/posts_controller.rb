@@ -16,9 +16,6 @@ class PostsController < ApplicationController
     else
       render :edit
     end
-    @post.update(post_params)
-
-    redirect_to post_path(@post)
   end
 
   private
